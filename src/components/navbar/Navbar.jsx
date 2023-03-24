@@ -23,7 +23,15 @@ const Navbar = () => {
 
   return (
     <>
-      <Box bg={useColorModeValue("gray.100", "gray.900")} px={4} shadow={"md"}>
+      <Box
+        bg={useColorModeValue("#ffcb02", "#ffc001")}
+        px={4}
+        // py={3}
+        shadow={"md"}
+        zIndex={1}
+        position="fixed"
+        width={"100%"}
+      >
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <IconButton
             size={"lg"}

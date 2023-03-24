@@ -20,7 +20,7 @@ const ContentFeatures = () => {
           h={20}
           color={"white"}
           rounded={"full"}
-          bg={"gray.100"}
+          bg={"#ffcb02"}
           mb={1}
           alignItems={"center"}
           justifyContent={"center"}
@@ -38,7 +38,7 @@ const ContentFeatures = () => {
     )
   }
   return (
-    <Box p={5} marginTop="15px" bg="#ffcb02">
+    <Box p={5} marginTop="15px">
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
         <Feature
           icon={<Icon as={FcCustomerSupport} w={10} h={10} />}

@@ -12,11 +12,13 @@ import {
 } from "@chakra-ui/react"
 import ContentFeatures from "../features/ContentFeatures"
 import ContentPrice from "../price/ContentPrice"
+import PaymentMethod from "../payment/PaymentMethod"
+import Faq from "../faq/Faq"
 
 const BodyHomepage = () => {
   return (
     <>
-      <Stack direction={{ base: "column", md: "row" }} paddingTop="15px">
+      <Stack direction={{ base: "column", md: "row" }} paddingTop="105px">
         <Flex padding={5} align={"center"} justify={"center"}>
           <Stack spacing={8} w={"full"} maxW={"container.xl"}>
             <Heading
@@ -76,6 +78,8 @@ const BodyHomepage = () => {
       </Stack>
       <ContentFeatures />
       <ContentPrice />
+      <Faq />
+      <PaymentMethod />
     </>
   )
 }
