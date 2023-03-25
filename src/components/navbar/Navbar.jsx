@@ -4,7 +4,6 @@ import {
   Flex,
   Avatar,
   HStack,
-  Link,
   IconButton,
   Button,
   Menu,
@@ -19,6 +18,7 @@ import {
 } from "@chakra-ui/react"
 import { HamburgerIcon, CloseIcon, AddIcon } from "@chakra-ui/icons"
 import TheYellow from "../../assets/TheYellowTherapist.png"
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -26,7 +26,6 @@ const Navbar = () => {
   return (
     <>
       <Box
-        // bg={useColorModeValue("#ffcb02", "#ffc001")}
         bg={"white"}
         px={4}
         // py={3}
@@ -50,7 +49,7 @@ const Navbar = () => {
               spacing={4}
               display={{ base: "none", md: "flex" }}
             >
-              <Link>Home</Link>
+              <Link to={"/"}>Home</Link>
               <Link>Therapist</Link>
               <Link>TYTFS</Link>
             </HStack>
@@ -73,7 +72,9 @@ const Navbar = () => {
               </MenuButton>
               <MenuList border={"none"}>
                 <MenuItem>My Profile</MenuItem>
-                <MenuItem>Sign In</MenuItem>
+                <Link to={"/login"}>
+                  <MenuItem>Sign In</MenuItem>
+                </Link>
                 <MenuItem>Sign Out</MenuItem>
               </MenuList>
             </Menu>

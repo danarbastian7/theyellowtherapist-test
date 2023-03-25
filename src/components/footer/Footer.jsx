@@ -45,6 +45,10 @@ const Footer = () => {
       py={4}
       p={5}
       as={Stack}
+      bottom={0}
+      w="100%"
+      position="fixed"
+      bg={"white"}
     >
       <Text>© The Yellow Therapist. All rights reserved</Text>
       <Stack direction={"row"} spacing={6}>

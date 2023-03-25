@@ -17,6 +17,7 @@ const PaymentMethod = () => {
       p={5}
       borderBlockStartColor="gray.200"
       justifyContent={"center"}
+      marginBottom="100px"
     >
       <Grid gridTemplateColumns={{ md: "200px 1fr", base: "2fr" }}>
         <GridItem textAlign={{ base: "center", md: "start" }}>
