@@ -15,8 +15,10 @@ import {
   useDisclosure,
   useColorModeValue,
   Stack,
+  Image,
 } from "@chakra-ui/react"
 import { HamburgerIcon, CloseIcon, AddIcon } from "@chakra-ui/icons"
+import TheYellow from "../../assets/TheYellowTherapist.png"
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -24,7 +26,8 @@ const Navbar = () => {
   return (
     <>
       <Box
-        bg={useColorModeValue("#ffcb02", "#ffc001")}
+        // bg={useColorModeValue("#ffcb02", "#ffc001")}
+        bg={"white"}
         px={4}
         // py={3}
         shadow={"md"}
@@ -41,7 +44,7 @@ const Navbar = () => {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={"center"}>
-            <Box>Logo</Box>
+            <Image src={TheYellow} width="230px" />
             <HStack
               as={"nav"}
               spacing={4}

@@ -13,9 +13,10 @@ import {
 const PaymentMethod = () => {
   return (
     <Box
-      //   borderBlockEnd={"2px solid gray"}
-      borderBlockStart={"2px solid gray"}
+      borderBlockStart={"2px solid "}
       p={5}
+      borderBlockStartColor="gray.200"
+      justifyContent={"center"}
     >
       <Grid gridTemplateColumns={{ md: "200px 1fr", base: "2fr" }}>
         <GridItem textAlign={{ base: "center", md: "start" }}>
